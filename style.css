@@ -1,0 +1,100 @@
+/* Base layout */
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header styling */
+.page-header {
+  display: flex;
+  align-items: center;
+  background-color: #C60C30; /* Peking University red */
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.title-box h2,
+.title-box h3 {
+  margin: 2px 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #A00C26;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+  background-color: inherit;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #87091f;
+}
+
+/* Content area */
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Profile photo with text wrapping */
+.profile-photo {
+  float: left;
+  width: 200px;
+  max-width: 40%;
+  margin: 0 20px 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+/* Paragraphs text */
+.content p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+/* Last updated text in subtle grey */
+.last-updated {
+  color: #777777;
+  font-style: italic;
+  margin-top: 1em;
+}

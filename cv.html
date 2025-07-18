@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jun Lyu – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: fine‑tune the viewer on this page only */
+    .pdf-viewer {
+      width: 100%;
+      height: 900px;          /* adjust as you like */
+      border: 1px solid #ccc; /* subtle frame */
+      margin-top: 20px;
+    }
+    .download-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #C60C30;         /* Peking University red */
+      text-decoration: none;
+    }
+    .download-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="page-header">
+    <img src="PKU_logo.png" alt="Peking University Logo" class="logo" />
+    <div class="title-box">
+      <h1>Jun Lyu</h1>
+      <h2>Assistant Professor</h2>
+      <h3>School of Chinese as a Second Language, Peking University</h3>
+    </div>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Main content ===== -->
+  <main class="content">
+    <h2>Curriculum Vitae</h2>
+
+    <!-- Embedded, scrollable PDF viewer -->
+    <!-- Place your PDF in the same folder and name it exactly cv.pdf -->
+    <embed src="cv.pdf#toolbar=1&navpanes=0" type="application/pdf"
+           class="pdf-viewer" />
+
+    <!-- Download link -->
+    <a class="download-link" href="cv.pdf" download>⬇️ Download CV (PDF)</a>
+  </main>
+
+</body>
+</html>
